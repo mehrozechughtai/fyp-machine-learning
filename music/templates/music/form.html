@@ -1,0 +1,19 @@
+<h1> My Form </h1>
+
+<form action="" method="post">
+	{% csrf_token %}
+	<label for="Enter Paragraph">Paragraph:</label></br>
+	<textarea rows="4" cols="50" name="paragraph" placeholder="Enter Paragraph here.." ></textarea><br>
+	<input type="submit" class="btn btn-primary" name="submit_button">
+
+</form>
+
+<h1>Recently data Entered: </h1>
+<p>
+
+
+	{{ para }}
+
+</p>
+<hr>
+<p><strong>Words of Paragraph : </strong><b>{{ length }}</b></p>
