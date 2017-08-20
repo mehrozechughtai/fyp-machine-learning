@@ -1,8 +1,11 @@
 from django.http import HttpResponse
+from django.shortcuts import render
+from .models import MyClass
 
 # Create your views here.
 
 def index(request):
-	return HttpResponse("<h1>This is Home Page</h1>")
+	context = {}
+	return render(request,'mainapp/index.html',context)
 
 
