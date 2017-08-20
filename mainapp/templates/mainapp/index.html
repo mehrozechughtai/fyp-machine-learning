@@ -1,1 +1,15 @@
-<h1>This is Home Page</h1>
+<h1>Hello World! My Form</h1>
+
+
+<form action="" method="post">
+	{% csrf_token %}
+	<input type="text" name="input" id="input" 
+	placeholder="Enter your Input Here">
+	<input type="submit" name="process" value="Process">
+</form>
+
+<h1>Tagged Text: </h1>
+
+<p>
+	{{ input }}
+</p>
